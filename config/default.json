@@ -1,0 +1,9 @@
+{
+    "mongoURI": "mongodb+srv://ashish2:ashish123@cluster0-su4fz.mongodb.net/boardinfinity?retryWrites=true&w=majority",
+    "jwtSecret": "shadtf7834h523sddfgfdsg6ufg23qhrdfhgfdu265r77",
+    "emailSecret": "5r87324t4kht7dsfgdsf8y23hrudsyfdghf3jhft34",
+    "passwordSecret": "uweyt78y4tg47e432gsdgdfgf4tyfhgdfh37438yeh4",
+    "emailid": "XXXXX@XXXXX.com",
+    "emailpass": "XXXXXXXXXXX",
+    "version": "v1.0"
+}
