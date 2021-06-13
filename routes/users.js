@@ -9,7 +9,7 @@ const jwtSecret = config.get('jwtSecret');
 const User = require('../models/User');
 const { userregistervalidation } = require('../validation');
 
-router.post('/api/' + version + '/user/register', async (req, res) => {
+router.post('/api/' + version + '/user/signup', async (req, res) => {
     //LETS VALIDATE THE DATA BEFORE WE ADD LOGIN
     const { error } = userregistervalidation(req.body);
     if (error) return res.status(400).json(error.details[0].message);

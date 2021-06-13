@@ -24,6 +24,9 @@ app.get('/', (req, res) => res.json({ msg: 'welcome to boardinfinity api' }));
 app.use(require('./routes/users'));
 app.use(require('./routes/login'));
 app.use(require('./routes/resetpassword'));
+app.use(require('./routes/admin'));
+app.use(require('./routes/owner'));
+app.use(require('./routes/user'));
 
 
 const PORT = process.env.PORT || 5000;

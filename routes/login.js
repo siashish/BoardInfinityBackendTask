@@ -10,20 +10,6 @@ const User = require('../models/User');
 const { loginvalidation } = require('../validation');
 
 
-router.get('/api/' + version + '/user/login', auth, async (req, res) => {
-    try {
-        //Checking if the user exists
-        const user = await User.findById(req.user.id).select('-password');
-        if (!user) return res.status(400).send({ "error": "invalid user" });
-        res.json({ 'firstName': user.firstName, 'lastName': user.lastName, 'email': user.email, 'userType': user.userType, 'mobileno': user.mobileno  });
-
-    } catch (err) {
-        console.error(err.message);
-        res.status(500).json({ message: 'Sorry, something went wrong. Please try again later.' });
-    }
-});
-
-
 router.post('/api/' + version + '/user/login', async (req, res) => {
     //LETS VALIDATE THE DATA BEFORE WE ADD LOGIN
     const { error } = loginvalidation(req.body);
