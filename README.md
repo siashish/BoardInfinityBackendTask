@@ -35,6 +35,7 @@ after that you can check all API using POSTMAN/CURL that running on PORT 4000.
 ## Routes
 
 ```bash /api/v1.0/user/signup ``` --> for signup the user.
+
 BODY {
     "firstName": "XXXX",
     "lastName": "XXXXX",
@@ -49,6 +50,7 @@ RESPONSE {
 }
 
 ```bash /api/v1.0/user/login ``` --> for login the user.
+
 BODY {
     "email": "XXXXXX",
     "password": "XXXXXX"
